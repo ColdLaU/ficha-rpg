@@ -1,0 +1,30 @@
+.dados-sheet {
+  display: flex;
+}
+
+.coluna-um {
+  border: 4px solid red;
+  flex: 1;
+}
+
+.coluna-dois {
+  border: 4px solid green;
+  flex: 1;
+}
+
+.coluna-tres {
+  border: 4px solid blue;
+  flex: 1;
+}
+
+.atributo {
+  border: 2px solid black;
+  display: grid;
+  justify-items: center;
+}
+
+.atributo > input {
+  border-radius: 50%;
+  text-align: center;
+  width: 28px;
+}

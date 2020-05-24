@@ -1,5 +1,6 @@
 import React from "react";
 
+import Habilidades from '../Habilidades';
 import AtributeField from '../AtributeField';
 
 import "./styles.css";
@@ -18,21 +19,23 @@ const atributos = [
   return (
     <div className="dados-sheet">
       <div className="coluna-um">
-        <div>
+        <div className="linha-um">
           <div className="atributos">
             {/* {atributos.map(atributo => (<AtributeField label={atributo.name} />))} */}
-            {atributos.filter(atributo => atributo.name === "Strength").map(atributo => (<AtributeField label={atributo.name} />))}
+            {/* {atributos.filter(atributo => atributo.name === "Strength").map(atributo => (<AtributeField label={atributo.name} />))} */}
 
-            {/* <AtributeField label="Strength" />
+            <AtributeField label="Strength" />
             <AtributeField label="Dexterity" />
             <AtributeField label="Constitution" />
             <AtributeField label="Intelligence" />
             <AtributeField label="Wisdom" />
-            <AtributeField label="Charisma" /> */}
+            <AtributeField label="Charisma" />
           </div>
-          <div></div>
+          <div className="skills-attr">
+            <Habilidades />
+          </div>
         </div>
-        <div></div>
+        <div className="proeficiencias-languages"></div>
       </div>
       <div className="coluna-dois"></div>
       <div className="coluna-tres"></div>
